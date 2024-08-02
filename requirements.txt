@@ -11,3 +11,5 @@ pystempel
 torch==2.3.0
 transformers
 nbformat==4.2.0
+catboost
+wandb

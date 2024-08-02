@@ -1,0 +1,458 @@
+2024-08-02 02:14:05,269 INFO    StreamThr :288664 [internal.py:wandb_internal():85] W&B internal server running at pid: 288664, started at: 2024-08-02 02:14:05.268261
+2024-08-02 02:14:05,271 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status
+2024-08-02 02:14:05,315 INFO    WriterThread:288664 [datastore.py:open_for_write():87] open: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\run-0cwv7m5f.wandb
+2024-08-02 02:14:05,317 DEBUG   SenderThread:288664 [sender.py:send():379] send: header
+2024-08-02 02:14:05,379 DEBUG   SenderThread:288664 [sender.py:send():379] send: run
+2024-08-02 02:14:05,728 INFO    SenderThread:288664 [dir_watcher.py:__init__():211] watching files in: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files
+2024-08-02 02:14:05,729 INFO    SenderThread:288664 [sender.py:_start_run_threads():1188] run started: 0cwv7m5f with start time 1722557645.268261
+2024-08-02 02:14:05,749 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: check_version
+2024-08-02 02:14:05,749 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: check_version
+2024-08-02 02:14:05,875 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: run_start
+2024-08-02 02:14:05,889 DEBUG   HandlerThread:288664 [system_info.py:__init__():26] System info init
+2024-08-02 02:14:05,889 DEBUG   HandlerThread:288664 [system_info.py:__init__():41] System info init done
+2024-08-02 02:14:05,889 INFO    HandlerThread:288664 [system_monitor.py:start():194] Starting system monitor
+2024-08-02 02:14:05,889 INFO    SystemMonitor:288664 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-02 02:14:05,889 INFO    HandlerThread:288664 [system_monitor.py:probe():214] Collecting system info
+2024-08-02 02:14:05,891 DEBUG   HandlerThread:288664 [system_info.py:probe():152] Probing system
+2024-08-02 02:14:05,922 INFO    SystemMonitor:288664 [interfaces.py:start():188] Started cpu monitoring
+2024-08-02 02:14:05,923 INFO    SystemMonitor:288664 [interfaces.py:start():188] Started disk monitoring
+2024-08-02 02:14:05,923 INFO    SystemMonitor:288664 [interfaces.py:start():188] Started memory monitoring
+2024-08-02 02:14:05,930 INFO    SystemMonitor:288664 [interfaces.py:start():188] Started network monitoring
+2024-08-02 02:14:05,936 DEBUG   HandlerThread:288664 [system_info.py:_probe_git():137] Probing git
+2024-08-02 02:14:06,048 DEBUG   HandlerThread:288664 [system_info.py:_probe_git():145] Probing git done
+2024-08-02 02:14:06,048 DEBUG   HandlerThread:288664 [system_info.py:probe():200] Probing system done
+2024-08-02 02:14:06,048 DEBUG   HandlerThread:288664 [system_monitor.py:probe():223] {'os': 'Windows-11-10.0.22631-SP0', 'python': '3.12.4', 'heartbeatAt': '2024-08-02T00:14:05.891573', 'startedAt': '2024-08-02T00:14:05.231364', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/sergi-andreu/RealEstatePrediction.git', 'commit': '7315eb2785c96b44242ad96cad14eab08f5c3e39'}, 'email': 'sergiandreu97@gmail.com', 'root': 'C:/Users/sergi/repositories/realestate', 'host': 'SergiNoPlat', 'username': 'sergi', 'executable': 'c:\\Users\\sergi\\anaconda3\\envs\\olx\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2155.0, 'min': 0.0, 'max': 2701.0}, 'cpu_freq_per_core': [{'current': 2155.0, 'min': 0.0, 'max': 2701.0}], 'disk': {}, 'memory': {'total': 15.313495635986328}}
+2024-08-02 02:14:06,048 INFO    HandlerThread:288664 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-02 02:14:06,048 INFO    HandlerThread:288664 [system_monitor.py:probe():227] Publishing system info
+2024-08-02 02:14:06,048 DEBUG   HandlerThread:288664 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-02 02:14:06,050 ERROR   HandlerThread:288664 [system_info.py:_save_conda():223] Error saving conda packages: [WinError 2] El sistema no puede encontrar el archivo especificado
+Traceback (most recent call last):
+  File "c:\Users\sergi\anaconda3\envs\olx\Lib\site-packages\wandb\sdk\internal\system\system_info.py", line 216, in _save_conda
+    subprocess.call(
+  File "c:\Users\sergi\anaconda3\envs\olx\Lib\subprocess.py", line 389, in call
+    with Popen(*popenargs, **kwargs) as p:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\sergi\anaconda3\envs\olx\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\Users\sergi\anaconda3\envs\olx\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] El sistema no puede encontrar el archivo especificado
+2024-08-02 02:14:06,053 DEBUG   HandlerThread:288664 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-02 02:14:06,062 INFO    HandlerThread:288664 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-02 02:14:06,066 DEBUG   SenderThread:288664 [sender.py:send():379] send: files
+2024-08-02 02:14:06,066 INFO    SenderThread:288664 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-08-02 02:14:06,590 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-02 02:14:06,591 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: python_packages
+2024-08-02 02:14:06,591 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-02 02:14:06,593 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:06,595 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: stop_status
+2024-08-02 02:14:06,638 INFO    wandb-upload_0:288664 [upload_job.py:push():130] Uploaded file C:\Users\sergi\AppData\Local\Temp\tmp39tghuk9wandb\t36ceuc7-wandb-metadata.json
+2024-08-02 02:14:06,732 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\wandb-metadata.json
+2024-08-02 02:14:06,732 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\conda-environment.yaml
+2024-08-02 02:14:06,732 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\requirements.txt
+2024-08-02 02:14:06,747 DEBUG   SenderThread:288664 [sender.py:send():379] send: telemetry
+2024-08-02 02:14:07,603 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:07,747 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:08,619 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:09,622 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:09,756 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:10,282 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:14:10,624 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:11,625 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:11,761 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:12,621 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:13,623 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:13,791 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:14,634 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:15,286 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:14:15,650 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:15,823 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:16,668 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:17,675 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:17,850 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:18,686 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:19,706 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:19,873 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:20,286 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:14:20,699 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:21,600 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-02 02:14:21,601 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: stop_status
+2024-08-02 02:14:21,710 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:21,898 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:22,756 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:23,744 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:23,914 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:24,905 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:25,297 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:14:25,746 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:25,965 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:26,751 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:27,743 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:28,103 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:28,754 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:29,230 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:29,758 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:30,303 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:14:30,773 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:31,342 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:31,776 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:32,789 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:33,474 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:33,797 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:34,795 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:35,600 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:14:35,606 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:35,802 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:36,611 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-02 02:14:36,611 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: stop_status
+2024-08-02 02:14:36,614 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\config.yaml
+2024-08-02 02:14:36,814 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:37,713 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:37,807 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:38,818 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:39,831 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:39,841 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:40,770 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:14:40,859 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:41,897 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:41,900 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:42,864 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:43,878 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:43,996 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:44,892 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:45,784 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:14:45,900 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:46,217 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:46,914 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:47,916 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:48,320 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:48,923 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:49,919 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:50,380 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:50,794 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:14:50,923 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:51,621 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-02 02:14:51,623 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: stop_status
+2024-08-02 02:14:51,924 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:52,483 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:52,927 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:53,929 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:54,573 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:54,945 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:55,799 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:14:55,948 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:56,724 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:56,955 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:57,977 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:14:58,813 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:14:58,968 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:00,005 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:00,803 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:00,915 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:00,991 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:02,006 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:03,004 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:03,011 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:04,015 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:05,087 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:05,096 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:05,805 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:05,938 DEBUG   SystemMonitor:288664 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-02 02:15:05,940 DEBUG   SenderThread:288664 [sender.py:send():379] send: stats
+2024-08-02 02:15:06,032 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:06,153 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:06,626 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-02 02:15:06,627 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: stop_status
+2024-08-02 02:15:07,029 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:08,032 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:08,206 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:09,024 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:10,040 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:10,309 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:10,811 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:11,043 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:12,044 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:12,436 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:13,057 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:14,096 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:14,526 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:15,070 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:15,815 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:16,082 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:16,620 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:17,084 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:18,087 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:18,709 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:19,104 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:20,121 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:20,807 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:20,815 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:21,135 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:21,632 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-02 02:15:21,633 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: stop_status
+2024-08-02 02:15:22,149 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:22,914 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:23,159 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:24,164 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:25,132 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:25,166 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:25,822 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:26,209 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:27,172 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:27,220 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:28,167 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:28,372 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:29,172 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:30,173 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:30,477 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:30,827 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:31,165 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:32,179 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:32,646 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:33,191 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:34,199 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:34,714 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:35,208 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:35,835 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:35,940 DEBUG   SenderThread:288664 [sender.py:send():379] send: stats
+2024-08-02 02:15:36,218 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:36,643 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-02 02:15:36,644 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: stop_status
+2024-08-02 02:15:36,835 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:37,235 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:38,234 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:38,928 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:39,248 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:40,259 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:40,849 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:41,028 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:41,266 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:42,264 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:43,115 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:43,281 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:44,298 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:45,306 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:45,309 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:45,852 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:46,319 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:47,377 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:47,418 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:48,338 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:49,353 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:49,528 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:50,355 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:50,860 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:51,368 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:51,631 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:51,634 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-02 02:15:51,634 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: stop_status
+2024-08-02 02:15:52,383 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:53,389 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:53,732 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:54,400 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:55,411 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:55,836 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:55,865 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:15:56,420 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:57,421 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:57,912 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:15:58,423 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:59,409 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:15:59,992 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:00,425 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:00,872 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:16:01,436 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:02,068 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:02,446 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:03,480 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:04,172 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:04,481 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:05,530 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:05,883 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:16:05,950 DEBUG   SenderThread:288664 [sender.py:send():379] send: stats
+2024-08-02 02:16:06,363 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:06,502 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:06,638 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-02 02:16:06,639 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: stop_status
+2024-08-02 02:16:07,505 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:08,506 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:08,510 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:09,522 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:10,524 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:10,532 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:10,890 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:16:11,528 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:12,599 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:12,599 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:13,533 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:14,534 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:14,701 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:15,536 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:15,727 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:15,892 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:16:16,539 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:17,540 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:17,849 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:18,541 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:19,542 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:19,912 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:20,545 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:20,971 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:16:21,561 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:21,647 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-02 02:16:21,647 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: stop_status
+2024-08-02 02:16:21,979 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:22,563 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:23,561 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:24,074 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:24,568 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:25,569 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:25,986 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:16:26,189 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:26,583 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:27,593 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:28,275 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:28,605 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:29,620 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:30,352 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:30,629 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:30,997 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:16:31,641 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:32,411 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-02 02:16:32,417 DEBUG   SenderThread:288664 [sender.py:send():379] send: history
+2024-08-02 02:16:32,418 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: summary_record
+2024-08-02 02:16:32,420 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: server_info
+2024-08-02 02:16:32,423 INFO    SenderThread:288664 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-02 02:16:32,423 DEBUG   SenderThread:288664 [sender.py:send():379] send: telemetry
+2024-08-02 02:16:32,424 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: server_info
+2024-08-02 02:16:32,439 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:32,439 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\wandb-summary.json
+2024-08-02 02:16:32,560 DEBUG   SenderThread:288664 [sender.py:send():379] send: exit
+2024-08-02 02:16:32,560 INFO    SenderThread:288664 [sender.py:send_exit():586] handling exit code: 0
+2024-08-02 02:16:32,561 INFO    SenderThread:288664 [sender.py:send_exit():588] handling runtime: 146
+2024-08-02 02:16:32,584 INFO    SenderThread:288664 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-02 02:16:32,585 INFO    SenderThread:288664 [sender.py:send_exit():594] send defer
+2024-08-02 02:16:32,585 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:32,585 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 0
+2024-08-02 02:16:32,586 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:32,586 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-08-02 02:16:32,586 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 1
+2024-08-02 02:16:32,586 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:32,586 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 1
+2024-08-02 02:16:32,587 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:32,587 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-08-02 02:16:32,587 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 2
+2024-08-02 02:16:32,587 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:32,587 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 2
+2024-08-02 02:16:32,587 INFO    HandlerThread:288664 [system_monitor.py:finish():203] Stopping system monitor
+2024-08-02 02:16:32,588 INFO    HandlerThread:288664 [interfaces.py:finish():200] Joined cpu monitor
+2024-08-02 02:16:32,588 DEBUG   SystemMonitor:288664 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-02 02:16:32,589 INFO    HandlerThread:288664 [interfaces.py:finish():200] Joined disk monitor
+2024-08-02 02:16:32,589 DEBUG   SystemMonitor:288664 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-02 02:16:32,590 INFO    HandlerThread:288664 [interfaces.py:finish():200] Joined memory monitor
+2024-08-02 02:16:32,591 INFO    HandlerThread:288664 [interfaces.py:finish():200] Joined network monitor
+2024-08-02 02:16:32,591 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:32,591 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-08-02 02:16:32,592 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 3
+2024-08-02 02:16:32,592 DEBUG   SenderThread:288664 [sender.py:send():379] send: stats
+2024-08-02 02:16:32,592 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:32,593 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 3
+2024-08-02 02:16:32,593 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:32,593 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-08-02 02:16:32,593 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 4
+2024-08-02 02:16:32,594 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:32,594 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 4
+2024-08-02 02:16:32,594 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:32,594 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-08-02 02:16:32,594 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 5
+2024-08-02 02:16:32,595 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:32,595 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 5
+2024-08-02 02:16:32,595 DEBUG   SenderThread:288664 [sender.py:send():379] send: summary
+2024-08-02 02:16:32,606 INFO    SenderThread:288664 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-02 02:16:32,607 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:32,607 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-08-02 02:16:32,607 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 6
+2024-08-02 02:16:32,608 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:32,608 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 6
+2024-08-02 02:16:32,608 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:32,608 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-08-02 02:16:32,612 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: status_report
+2024-08-02 02:16:32,768 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 7
+2024-08-02 02:16:32,768 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:32,768 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 7
+2024-08-02 02:16:32,769 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:32,769 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-08-02 02:16:33,445 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\wandb-summary.json
+2024-08-02 02:16:33,446 INFO    Thread-16 :288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\config.yaml
+2024-08-02 02:16:33,567 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-02 02:16:33,909 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 8
+2024-08-02 02:16:33,910 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: poll_exit
+2024-08-02 02:16:33,910 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:33,911 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 8
+2024-08-02 02:16:33,911 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:33,911 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-08-02 02:16:33,911 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 9
+2024-08-02 02:16:33,912 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:33,912 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 9
+2024-08-02 02:16:33,912 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:33,912 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-08-02 02:16:33,912 INFO    SenderThread:288664 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-02 02:16:34,456 INFO    SenderThread:288664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:34,456 INFO    SenderThread:288664 [dir_watcher.py:finish():388] scan: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files
+2024-08-02 02:16:34,457 INFO    SenderThread:288664 [dir_watcher.py:finish():402] scan save: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\conda-environment.yaml conda-environment.yaml
+2024-08-02 02:16:34,457 INFO    SenderThread:288664 [dir_watcher.py:finish():402] scan save: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\config.yaml config.yaml
+2024-08-02 02:16:34,458 INFO    SenderThread:288664 [dir_watcher.py:finish():402] scan save: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log output.log
+2024-08-02 02:16:34,461 INFO    SenderThread:288664 [dir_watcher.py:finish():402] scan save: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\requirements.txt requirements.txt
+2024-08-02 02:16:34,464 INFO    SenderThread:288664 [dir_watcher.py:finish():402] scan save: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\wandb-metadata.json wandb-metadata.json
+2024-08-02 02:16:34,465 INFO    SenderThread:288664 [dir_watcher.py:finish():402] scan save: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\wandb-summary.json wandb-summary.json
+2024-08-02 02:16:34,468 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 10
+2024-08-02 02:16:34,469 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:34,471 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 10
+2024-08-02 02:16:34,472 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:34,472 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-08-02 02:16:34,472 INFO    SenderThread:288664 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-02 02:16:34,579 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-02 02:16:34,580 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: poll_exit
+2024-08-02 02:16:34,825 INFO    wandb-upload_0:288664 [upload_job.py:push():130] Uploaded file c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\config.yaml
+2024-08-02 02:16:35,429 INFO    wandb-upload_3:288664 [upload_job.py:push():130] Uploaded file c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\wandb-summary.json
+2024-08-02 02:16:35,513 INFO    wandb-upload_2:288664 [upload_job.py:push():130] Uploaded file c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\requirements.txt
+2024-08-02 02:16:35,588 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-02 02:16:35,588 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: poll_exit
+2024-08-02 02:16:36,033 INFO    wandb-upload_1:288664 [upload_job.py:push():130] Uploaded file c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\files\output.log
+2024-08-02 02:16:36,241 INFO    Thread-15 (_thread_body):288664 [sender.py:transition_state():614] send defer: 11
+2024-08-02 02:16:36,242 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:36,242 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 11
+2024-08-02 02:16:36,243 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:36,243 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-08-02 02:16:36,243 INFO    SenderThread:288664 [file_pusher.py:join():175] waiting for file pusher
+2024-08-02 02:16:36,243 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 12
+2024-08-02 02:16:36,244 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:36,244 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 12
+2024-08-02 02:16:36,244 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:36,244 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-08-02 02:16:36,244 INFO    SenderThread:288664 [file_stream.py:finish():601] file stream finish called
+2024-08-02 02:16:36,541 INFO    SenderThread:288664 [file_stream.py:finish():605] file stream finish is done
+2024-08-02 02:16:36,542 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 13
+2024-08-02 02:16:36,542 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:36,542 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 13
+2024-08-02 02:16:36,543 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:36,543 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-08-02 02:16:36,543 INFO    SenderThread:288664 [sender.py:transition_state():614] send defer: 14
+2024-08-02 02:16:36,544 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: defer
+2024-08-02 02:16:36,544 DEBUG   SenderThread:288664 [sender.py:send():379] send: final
+2024-08-02 02:16:36,544 INFO    HandlerThread:288664 [handler.py:handle_request_defer():184] handle defer: 14
+2024-08-02 02:16:36,544 DEBUG   SenderThread:288664 [sender.py:send():379] send: footer
+2024-08-02 02:16:36,545 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: defer
+2024-08-02 02:16:36,545 INFO    SenderThread:288664 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-08-02 02:16:36,546 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-02 02:16:36,546 DEBUG   SenderThread:288664 [sender.py:send_request():406] send_request: poll_exit
+2024-08-02 02:16:36,547 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-02 02:16:36,548 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: get_summary
+2024-08-02 02:16:36,548 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: sampled_history
+2024-08-02 02:16:36,550 DEBUG   HandlerThread:288664 [handler.py:handle_request():158] handle_request: shutdown
+2024-08-02 02:16:36,550 INFO    HandlerThread:288664 [handler.py:finish():882] shutting down handler
+2024-08-02 02:16:37,553 INFO    WriterThread:288664 [datastore.py:close():296] close: c:\Users\sergi\repositories\realestate\notebooks\wandb\run-20240802_021405-0cwv7m5f\run-0cwv7m5f.wandb
+2024-08-02 02:16:37,553 INFO    SenderThread:288664 [sender.py:finish():1615] shutting down sender
+2024-08-02 02:16:37,553 INFO    SenderThread:288664 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-02 02:16:37,553 INFO    SenderThread:288664 [file_pusher.py:join():175] waiting for file pusher

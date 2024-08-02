@@ -1,0 +1,39 @@
+{
+    "os": "Windows-11-10.0.22631-SP0",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-08-02T03:27:16.577476",
+    "startedAt": "2024-08-02T03:27:15.561514",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/sergi-andreu/RealEstatePrediction.git",
+        "commit": "7315eb2785c96b44242ad96cad14eab08f5c3e39"
+    },
+    "email": "sergiandreu97@gmail.com",
+    "root": "C:/Users/sergi/repositories/realestate",
+    "host": "SergiNoPlat",
+    "username": "sergi",
+    "executable": "c:\\Users\\sergi\\anaconda3\\envs\\olx\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2155.0,
+        "min": 0.0,
+        "max": 2701.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2155.0,
+            "min": 0.0,
+            "max": 2701.0
+        }
+    ],
+    "disk": {},
+    "memory": {
+        "total": 15.313495635986328
+    }
+}
