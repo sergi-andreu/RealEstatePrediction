@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "C:\Users\sergi\AppData\Local\Temp\ipykernel_258364\2634963258.py", line 19, in wandb_train
-    if standard_scale_flag:
-       ^^^^^^^^^^^^^^^^^^^
-NameError: name 'standard_scale_flag' is not defined
