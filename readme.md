@@ -1,4 +1,96 @@
-## Future work
+# Introduction
+
+This is the code for an assignment on predicting the price of buildings from ads of a real estate platform.
+The code found here is far for productive, and is designed to follow my though process during this task.
+
+the main codes are to be found in the notebooks folder, and they are order by the thought process that I followed.
+
+
+# Evaluation recommendation
+
+For a thourough evaluation, going through all the notebooks, in order, would be recommended. I tried to add everything contributing to understand my thought process.
+Time is valuable, so looking through it is also welcome.
+
+My recommendation would be to look at:
+- *src/data_preprocessing*
+- *12_Final_model_evaluation.ipynb*
+
+
+## Repository structure
+
+```plaintext
+│
+├── data/
+│
+├── notebooks/
+│ ├── catboost_info/
+│ ├── wandb/
+│ ├── 00_First_data_impression.ipynb
+│ ├── 01_Extract_features_from_params.ipynb
+│ ├── 02_00_Extract_features_from_text_Word2Vec.ipynb
+│ ├── 02_01_Extract_features_from_text_BERT.ipynb
+│ ├── 02_02_Reduce_embedding_dimensionality.ipynb
+│ ├── 03_Extract_time_features.ipynb
+│ ├── 04_Extract_map_features.ipynb
+│ ├── 05_Load_and_extract_data_using_scripts.ipynb
+│ ├── 06_Data_exploration.ipynb
+│ ├── 07_Baseline_models_training_with_outliers.ipynb
+│ ├── 07_Baseline_models_training_without_outliers.ipynb
+│ ├── 08_Catboost_models_training_with_outliers.ipynb
+│ ├── 09_Catboost_hyperparameter_tuning.ipynb
+│ ├── 10_Catboost_feature_elimination.ipynb
+│ ├── 11_Final_model_training.ipynb
+│ ├── 12_Final_model_evaluation.ipynb
+│ └── 13_Final_model_inference.ipynb
+│
+├── src/
+│ ├── BERT_embeddings.py
+│ ├── compute_metrics.py
+│ ├── data_preprocessing.py
+│ ├── outlier_imputer.py
+│ ├── params_parser.py
+│ └── word2vec_embeddings.py
+│
+├── .gitignore
+├── readme.md
+├── requirements_freeze.txt
+└── requirements.txt
+```
+
+
+# Getting started
+
+## Prepare the dependencies
+
+You can create a python environment and install dependencies by:
+
+```
+pip install -r requirements.txt
+```
+And execute the notebooks (as you usually do).
+
+The versions are not specified (for time reasons; sorry). But, to make sure for reproducibility, I have pip-freezed the dependencies in the *requirements.txt_freeze* file.
+
+So, if it is not working, do
+```
+pip install -r requirements_freeze.txt
+```
+
+## Get the data
+To obtain lots of required files from the **data/** folder, one would need to re-run lots of notebooks, which is not quite nice.
+
+For that reason, please ask me for a *.zip* of my pre-computed data folder.
+I have not uploaded the content here, since I don't want to leak data (and also I don't like to upload binaries / large files to github).
+
+
+## Use the final model
+
+Using the final model for inference is not recommended, mostly for efficiency reasons.<br>
+
+However, if you really want to do this, you would have to use the [*13_Final_model_inference* notebook](notebooks/13_Final_model_inference.ipynb). 
+
+
+# Future work
 
 ### Meta-model training
 Solving these bussiness challenge is not just training the model, but understanding the overall product.

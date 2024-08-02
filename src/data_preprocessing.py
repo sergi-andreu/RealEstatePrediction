@@ -32,8 +32,14 @@ class DataPreprocessing:
 
         self.verbose = verbose
 
-        self.train_indices = np.load(train_indices_path)
-        self.test_indices = np.load(test_indices_path)
+        try:
+            self.train_indices = np.load(train_indices_path)
+        except:
+            self.train_indices = np.array([])
+        try:
+            self.test_indices = np.load(test_indices_path)
+        except:
+            self.test_indices = np.array([])
 
         self.nonfrequent_threshold = nonfrequent_threshold
         self.missing_values_threshold = missing_values_threshold
@@ -104,7 +110,7 @@ class DataPreprocessing:
                 print("Textual features added")
                 print(f"The total number of columns is {len(self.X.columns)}")
 
-        self.X = self.X.drop(columns=['title', 'description'])
+        #self.X = self.X.drop(columns=['title', 'description'])
         if self.verbose:
             print("Text columns dropped")
             print(f"The total number of columns is {len(self.X.columns)}")
@@ -139,7 +145,7 @@ class DataPreprocessing:
 
         self.drop_unnecessary_columns_at_end_flag = drop_unnecessary_columns_at_end_flag
         if self.drop_unnecessary_columns_at_end_flag:
-            self.X = self.X.drop(columns=['params'], errors='ignore')
+            self.X = self.X.drop(columns=['params', 'title', 'description'], errors='ignore')
 
     def get_tfidf_embeddings(self):
         title_embeddings_tfidf_pca = pd.read_csv("../data/new_features/pca_tfidf_titles.csv")

@@ -1,6 +1,10 @@
 data/bert_embeddings/*
 data/*
 
+wandb/*
+
+figures/*
+
 *.bundle.*
 lib/
 node_modules/
